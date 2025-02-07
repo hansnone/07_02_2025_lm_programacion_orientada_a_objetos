@@ -52,4 +52,6 @@ public class ClaseAlumnos {
     public void nombre(String nombre){
         this.nombre = nombre;
     };
+
+    
 }
