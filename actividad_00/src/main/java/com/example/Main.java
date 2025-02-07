@@ -30,12 +30,7 @@ public class Main {
                 case "1":
                     System.out.println("Opcion 1");
                     System.out.println("Crear alumno");
-                    System.out.println("Nombre: ");
-                    String nombre = scr.next();
-                    System.out.println("Edad: ");
-                    int edad = scr.nextInt();
-                    ClaseAlumnos alumno = new ClaseAlumnos(edad, nombre);
-                    System.out.println(alumno);
+                    crear_alumno();
                     break;
                 case "2":
                     System.out.println("Opcion 2"); 
@@ -43,10 +38,19 @@ public class Main {
                     System.out.println("Opcion 3");        
             };
         } while (!opcion.equals("3"));
+
+        scr.close();
     }
 
-    private void crear_alumno(){
-        ClaseAlumnos alumno = new ClaseAlumnos();
+    private static void crear_alumno(){
+        System.out.println("Nombre: ");
+        Scanner scr = new Scanner(System.in);
+                String nombre = scr.next();
+        System.out.println("Edad: ");
+        int edad = scr.nextInt();
+        ClaseAlumnos alumno = new ClaseAlumnos(edad, nombre);
+        System.out.println(alumno);
+        scr.close();
     }
 }
 
