@@ -10,6 +10,10 @@ public class Main {
         System.out.println(alumno_3);
 
         System.out.println(alumno_1.Clase_imprimir_alumno());
+
+        alumno_1.nombre("pepito");
+
+        System.out.println(alumno_1.nombre());
     }
 }
 
