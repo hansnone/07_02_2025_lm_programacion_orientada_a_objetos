@@ -34,4 +34,22 @@ public class ClaseAlumnos {
     public String Clase_imprimir_alumno(ClaseAlumnos alumno){
         return "Nombre "+nombre+" edad: "+edad;
     };
+
+    public ClaseAlumnos (String nombre, int edad, String curso, String telefono, double saldo){
+        this.nombre = nombre;
+        this.edad = edad;
+        this.curso = curso;
+        this.telefono = telefono;
+        this.saldo = saldo;
+    };
+
+    // Getters / Setters
+
+    public String nombre(){
+        return this.nombre;
+    };
+
+    public void nombre(String nombre){
+        this.nombre = nombre;
+    };
 }
