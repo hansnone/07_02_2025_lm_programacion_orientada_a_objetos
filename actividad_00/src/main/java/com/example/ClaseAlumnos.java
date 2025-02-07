@@ -53,5 +53,32 @@ public class ClaseAlumnos {
         this.nombre = nombre;
     };
 
-    
+    public int edad(){
+        return this.edad;
+    };
+
+    public void edad(int edad){
+        this.edad = edad;
+    };
+
+    public String curso(){
+        return this.curso;
+    };
+
+    public void curso(String curso){
+        this.curso = curso;
+    };
+
+    public String telefono(){
+        return this.telefono;
+    };
+
+    public void telefono(String telefono){
+        this.telefono = telefono;
+    };
+
+    public double saldo(){
+        return this.saldo;
+    };
+
 }
